@@ -41,7 +41,7 @@ Timestamp: 9:22
 ### Services
 - This creates a permenant IP address for the pod.
 - The lifecycles of the service and the pod are **not** connected. This means that if the pod dies, the service and its IP address will remain.This means that the endpoint remains the same.
-
+![service](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/service.png)
 
 ### Ingress
 
