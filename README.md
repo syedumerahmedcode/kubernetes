@@ -13,5 +13,14 @@ Timestamp: 0:16
 
 ### What problems does k8s solve?
 
+- Trend from _Monolith_ to _Microservices_.
+- This resulted in a _increased usage of containers_.
+- Demand of a proper way of _managing_ those hundreds of containers.
 
 ### What are the tasks of an orchestration tool?
+
+- High availability(or no downtime)
+- Scalibility(Scalable web applications are capable of handling increased user traffic and growing demands without compromising performance)
+- Diaster recovery(backup and restore)
+
+
