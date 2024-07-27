@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 12:49
+Timestamp: 16:19
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -65,8 +65,10 @@ Timestamp: 12:49
 
 
 ### Volumes
-
-
+- Volume attaches a physical storage on a hard drive to your pod.
+- The storage can be on a local machine or on a remote machine which is outside of the K8s cluster.
+- Please note that K8s explicity _does not_ manage any data persistence.
+![volume](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/volume.png)
 
 
 
@@ -79,6 +81,7 @@ Timestamp: 12:49
 ### Deployment
 
 
-
+### Attention
+- All images of various K8s components are taken from via timestamps from the video in the video source.
 
 
