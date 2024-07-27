@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 16:19
+Timestamp: 18:42 
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -39,8 +39,9 @@ Timestamp: 16:19
 ![pod](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/pod.png)
 
 ### Services
-- This creates a permenant IP address for the pod.
+- This creates a permenant static IP address for the pod.
 - The lifecycles of the service and the pod are **not** connected. This means that if the pod dies, the service and its IP address will remain.This means that the endpoint remains the same.
+- Service also acts as a **load balancer** meaning that the service will catch the request coming from the ouside via Ingress(see below) and forward to the pod which is least busy.
 ![service](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/service.png)
 
 ### Ingress
@@ -70,6 +71,12 @@ Timestamp: 16:19
 - Please note that K8s explicity _does not_ manage any data persistence.
 ![volume](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/volume.png)
 
+### Deployment
+- Replicate everything.
+- Here, we define a **blueprint of the pod**(for example, _my-app_ pod) and specify **how many replicas** of that pod you would like to run.
+- Hence, we define the _blueprint_ of the underlying pods.
+- We created _deployments_ and _in practice, we mostly work with deployments, not pods_. As:
+- Deployment is an _abstraction_ on pod just like pod is an _abstraction_ on the container.
 
 
 
@@ -78,7 +85,7 @@ Timestamp: 16:19
 ### Statefulset
 
 
-### Deployment
+
 
 
 ### Attention
