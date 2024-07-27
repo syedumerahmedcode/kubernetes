@@ -36,15 +36,15 @@ Timestamp: 9:22
 - Each pod gets its own IP address(_not the container but the pod itself gets an IP address_).
 - Please note that pods are ephemeral ion nature i.e. they can die very easily. When that happens, a new pod is created which takes place of the recently deceased pod.
 - New IP address on re-creation of a pod.
-
+![pod](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/pod.png)
 
 ### Services
 - This creates a permenant IP address for the pod.
 - The lifecycles of the service and the pod are **not** connected. This means that if the pod dies, the service and its IP address will remain.This means that the endpoint remains the same.
 
 
-
 ### Ingress
+
 
 
 ### Volumes
