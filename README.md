@@ -89,6 +89,6 @@ Timestamp: 18:42
 
 
 ### Attention
-- All images of various K8s components are taken from via timestamps from the video in the video source.
+- All images of various K8s components are taken at various timestamps from the video in the video source.
 
 
