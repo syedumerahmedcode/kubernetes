@@ -53,13 +53,21 @@ Timestamp: 12:49
 ### ConfigMaps
 - It contains the external configuration to the application. For example, database name. 
 - - **Advantage:** Without configmap(and K8s), if database name chnaged, one would have to rebuild the docker image, push it to docker repository and then pull the image. With configmap, all of these extra steps are not needed anymore.
+- Once it is connected to the pod, the pod can see and read the values in the configmap.
 ![configmap](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/configmap.png)
+
+
+### Secrets
+- Used for storing secret data.
+- The credentails(or other secret data)stored is base64 encoded.
+- Once it is connected to the pod, the pod can see and read the values in the secret.
+![secret](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/secret.png)
 
 
 ### Volumes
 
 
-### Secrets
+
 
 
 
