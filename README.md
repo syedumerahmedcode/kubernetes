@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 9:22
+Timestamp: 10:46
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -44,8 +44,11 @@ Timestamp: 9:22
 ![service](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/service.png)
 
 ### Ingress
-
-
+- Application is made accessible via a browser using ingress.
+- External service is a service that opens the communication to external sources. It is a http IP address of the K8s service and the IP address of the said K8s service.
+- Ingress removes the IP address of the K8s service and instead creates a user readable(user friendly) web address. 
+- After creating an ingress, the user request first goes to ingress and then it goes to the service.
+![ingress](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/ingress.png)
 
 ### Volumes
 
