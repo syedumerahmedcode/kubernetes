@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 7:05
+Timestamp: 9:22
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -38,8 +38,10 @@ Timestamp: 7:05
 - New IP address on re-creation of a pod.
 
 
-
 ### Services
+- This creates a permenant IP address for the pod.
+- The lifecycles of the service and the pod are **not** connected. This means that if the pod dies, the service and its IP address will remain.This means that the endpoint remains the same.
+
 
 
 ### Ingress
