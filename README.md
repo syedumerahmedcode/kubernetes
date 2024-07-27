@@ -73,11 +73,11 @@ Timestamp: 18:42
 
 ### Deployment
 - Replicate everything.
-- Here, we define a **blueprint of the pod**(for example, _my-app_ pod) and specify **how many replicas** of that pod you would like to run.
+- Here, we define a **blueprint of the pod**(for example, _my-app_ pod) and specify **how many replicas** of that pod you would like to run. That means, we can sclae up or scale down the umber of replicas.
 - Hence, we define the _blueprint_ of the underlying pods.
 - We created _deployments_ and _in practice, we mostly work with deployments, not pods_. As:
 - Deployment is an _abstraction_ on pod just like pod is an _abstraction_ on the container.
-
+![deployment](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/deployment.png)
 
 
 
