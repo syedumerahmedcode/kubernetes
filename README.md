@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 0:16
+Timestamp: 7:05
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -21,6 +21,40 @@ Timestamp: 0:16
 
 - _High availability_(or no downtime)
 - _Scalibility_(Scalable web applications are capable of handling increased user traffic and growing demands without compromising performance)
-- _Diaster recovery_(backup and restore)
+- _Disaster recovery_(backup and restore)
+
+## Kubernetes Components
+
+### Node
+- A simple server - a physical or virtual machine.
+
+### Pod
+- Smallest unit K8s.
+- It is an abstraction over the container.
+- -  Note: We do not work with the underlying container technology but rather we only interact with the Kubernetes layer.
+
+
+### Services
+
+
+### Ingress
+
+
+### Volumes
+
+
+### Secrets
+
+
+### ConfigMaps
+
+
+### Statefulset
+
+
+### Deployment
+
+
+
 
 
