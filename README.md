@@ -32,6 +32,11 @@ Timestamp: 7:05
 - Smallest unit K8s.
 - It is an abstraction over the container.
 - -  Note: We do not work with the underlying container technology but rather we only interact with the Kubernetes layer.
+- Usually, one application runs per pod. 
+- Each pod gets its own IP address(_not the container but the pod itself gets an IP address_).
+- Please note that pods are ephemeral ion nature i.e. they can die very easily. When that happens, a new pod is created which takes place of the recently deceased pod.
+- New IP address on re-creation of a pod.
+
 
 
 ### Services
