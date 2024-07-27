@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 10:46
+Timestamp: 12:49
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -50,13 +50,19 @@ Timestamp: 10:46
 - After creating an ingress, the user request first goes to ingress and then it goes to the service.
 ![ingress](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/ingress.png)
 
+### ConfigMaps
+- It contains the external configuration to the application. For example, database name. 
+- - **Advantage:** Without configmap(and K8s), if database name chnaged, one would have to rebuild the docker image, push it to docker repository and then pull the image. With configmap, all of these extra steps are not needed anymore.
+![configmap](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/configmap.png)
+
+
 ### Volumes
 
 
 ### Secrets
 
 
-### ConfigMaps
+
 
 
 ### Statefulset
