@@ -83,9 +83,14 @@ Timestamp: 18:42
 
 
 ### Statefulset
+- Databases _cannot_ be replicated via Deployment as it **has a state** (its data). 
+- Statefulset is meant for **Stateful apps** such as MySql, MongoDb, Elastic search, MS SQL Server etc.
+- Statefulset amkes sures to replicate the stateful applications (in terms of number of instatnce) along with the correct state.
+- Please note that deploying statefulset in K8s is _not_ easy(as in it is more difficult when comapring to working with deployments). Hence, normally, databases are stored outside of K8s cluster.
 
+- **Note:** _Deployment_ is meant for **stateless applications** and _Stateful_ is meant for **Stateful apps or databases**.
 
-
+![statefulset](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/statefulset.png)
 
 
 ### Attention
