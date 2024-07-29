@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 25:12 
+Timestamp: 26:58 
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -126,4 +126,6 @@ Timestamp: 25:12
 
 
 #### How to join a new Node?
+
+All of the **how to** questions listed above are handled by Master node.
 
