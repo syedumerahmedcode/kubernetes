@@ -107,7 +107,9 @@ Timestamp: 25:12
 - Worker machine in K8s cluster.
 - Each node has multiple parts on it.
 - 3 processes must be installed on every node.
-- Worker nodes do the actual work.[Diagram at 23:51?]
--- Container runtime: Normally docker but it  can be some other technology. It is needed as containers are running on every node hence a container runtime is needed.
--- Kubelet: the process that schedules the pods and container underneath. Kubelet interacts with both the (docker)_container_ and the _node_. Kubelet starts a pod with a container inside. Kubelet also assigns resources(RAM, CPU, storage etc.) from the node to the container.[Diagram at 25:12]
--- Kube proxy:
+- Worker nodes do the actual work.
+![workernode](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/workernode.png)
+- - Container runtime: Normally docker but it  can be some other technology. It is needed as containers are running on every node hence a container runtime is needed.
+- - Kubelet: the process that schedules the pods and container underneath. Kubelet interacts with both the (docker)_container_ and the _node_. Kubelet starts a pod with a container inside. Kubelet also assigns resources(RAM, CPU, storage etc.) from the node to the container.
+![kubelet](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/kubelet.png)
+- - Kube proxy:
