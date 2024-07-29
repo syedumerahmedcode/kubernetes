@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 26:58 
+Timestamp: 30:01 
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -129,3 +129,9 @@ Timestamp: 26:58
 
 All of the **how to** questions listed above are handled by Master node.
 
+- **4 processes run** on every master node. These are:
+--> API server: API server is like a cluster gateway. It also acts a gate keeper for authentication.
+![apiserver](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/apiserver.png).
+API server also acts a single entrypoint into the cluster.
+--> Scheduler: After the request is validated by the API server, it forwards the requests to the scheduler which will start the pod on one of the worker nodes. Please mote that the scheduler _just decides_ on which Node new Pod should be scheduled. The process of actually creating a pod on the worker node is done by kubelet.![scheduler](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/scheduler.png).
+- 
