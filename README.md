@@ -112,4 +112,18 @@ Timestamp: 25:12
 - - Container runtime: Normally docker but it  can be some other technology. It is needed as containers are running on every node hence a container runtime is needed.
 - - Kubelet: the process that schedules the pods and container underneath. Kubelet interacts with both the (docker)_container_ and the _node_. Kubelet starts a pod with a container inside. Kubelet also assigns resources(RAM, CPU, storage etc.) from the node to the container.
 ![kubelet](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/kubelet.png)
-- - Kube proxy:
+- - Kube proxy: kubeproxy forwards the requests in an intelligent manner that amkes sure that the communication also works in a performant manner with low overhead. [Diagram at 26:00?
+
+### How do we interact with K8s cluster?
+
+#### How to schedule pod?
+
+
+#### How to monitor?
+
+
+#### How to reschedule/restart pod?
+
+
+#### How to join a new Node?
+
