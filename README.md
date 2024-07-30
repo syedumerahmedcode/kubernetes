@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 33:13 
+Timestamp: 35:18
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -149,5 +149,25 @@ API server also acts a single entrypoint into the cluster.
 Please note that the actual application data is not stored in the etcd. 
 
 ![etcd](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/etcd.png)
+
+
+### Minikube and Kubectl
+
+#### Minikube
+
+In a production cluster setup, one has at least two master nodes and three or more worker nodes.These nodes exist on separate virtual or physical machines. To setup this sort of setup on a local machine is quiet difficult. Hence, _minikube_ works as a good compromise.
+
+**minikube** is a one node cluster which master processes and worker processes both run on _one node(machine)_. Minikube also has docker container runtime pre-installed.
+
+Minikube runs via a _virtual box(or some other hypervisor)_ on the local machine. So,
+
+- creates virtual box on the laptop
+- node runs in that virtual box
+- It is a 1 node K8s cluster.
+- It is primarily for testing purposes.
+
+![minikube](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/minikube.png)
+
+#### kubectl
 
 
