@@ -134,5 +134,8 @@ All of the **how to** questions listed above are handled by Master node.
 ![apiserver](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/apiserver.png).
 API server also acts a single entrypoint into the cluster.
 --> Scheduler: After the request is validated by the API server, it forwards the requests to the scheduler which will start the pod on one of the worker nodes. Please mote that the scheduler _just decides_ on which Node new Pod should be scheduled. The process of actually creating a pod on the worker node is done by kubelet.![scheduler](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/scheduler.png).
---> Controller manager: Controller manager detects state changes in the cluster such as pods dying.So, when the pod dies, the controller manager detects that and tries to recokver the cluster state as soon as possible.
+--> Controller manager: Controller manager detects state changes in the cluster such as pods dying.So, when the pod dies, the controller manager detects that and tries to recover the cluster state as soon as possible.
 ![controllermanager](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/controllermanager.png).
+--> etcd: This is a key value stored of the cluster state. etcd is the cluster brain as in every cluster change gets stored in the key value store of etcd.
+Please note that the actual application data is not stored in the etcd. 
+![etcd](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/etcd.png).
