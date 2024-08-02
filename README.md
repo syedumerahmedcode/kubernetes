@@ -170,4 +170,9 @@ Minikube runs via a _virtual box(or some other hypervisor)_ on the local machine
 
 #### kubectl
 
+- kubectl is a command line tool for K8s cluster.
+- Kubectl talks with Apiserver(within the master process) located within minikube.
+- Using kubectl, one can do anything within the K8s cluster such as create pods, destroy pods, create services etc.
+
+![kubectl](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/kubectl.png)
 
