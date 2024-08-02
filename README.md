@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 37:04
+Timestamp: 38:58
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -168,6 +168,9 @@ Minikube runs via a _virtual box(or some other hypervisor)_ on the local machine
 
 ![minikube](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/minikube.png)
 
+- How to install minuikube on linux?
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download
+
 #### kubectl
 
 - kubectl is a command line tool for K8s cluster.
@@ -176,3 +179,5 @@ Minikube runs via a _virtual box(or some other hypervisor)_ on the local machine
 
 ![kubectl](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/kubectl.png)
 
+- How to install Kubectl on linux?
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
