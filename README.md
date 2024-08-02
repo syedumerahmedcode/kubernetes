@@ -184,6 +184,8 @@ From a terminal with administrator access (but not logged in as root), run:
 minikube start
 ~~~
 
+Further notes in minikube.md.
+
 
 #### kubectl
 
