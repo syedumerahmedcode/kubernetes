@@ -72,3 +72,27 @@ kubectl port-forward service/hello-minikube 7080:8080
 
 The application is now available at http://localhost:7080/
 
+### LoadBalancer
+
+To access a LoadBalancer deployment, use the “minikube tunnel” command. Here is an example deployment:
+
+~~~
+kubectl create deployment balanced --image=kicbase/echo-server:1.0
+kubectl expose deployment --type=LoadBalancer --port=8080
+~~~
+
+In a separate window, start the tunnel to create a routable IP for the 'balanced' deployment.
+
+~~~
+minikube tunnel
+~~~
+
+To find the routable IP, run this command and examine thhis external IP column.
+
+~~~
+kubectl get services balanced
+~~~
+
+Your deployment is now available at <EXTERNAL-IP>:8080
+
+
