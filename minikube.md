@@ -43,3 +43,32 @@ minikube dashboard
 
 ## Deploy applications
 
+### Service
+
+Create a sample deployment and expose it to port:8080
+
+~~~
+kubectl create deployment hello-minikube --image=kicbase/echo-server:1.0
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+~~~
+
+Your deployment will show up when you run:
+
+~~~
+kubectl get services hello-minikube
+~~~
+
+Let minikube launch a browser to access this service:
+
+~~~
+minikube service hello-minikube
+~~~
+
+Use kubectl to forward the port:
+
+~~~
+kubectl port-forward service/hello-minikube 7080:8080
+~~~
+
+The application is now available at http://localhost:7080/
+
