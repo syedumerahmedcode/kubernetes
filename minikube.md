@@ -203,3 +203,46 @@ Request served by bar-app
 ...
 ~~~
 
+## Managing the cluster
+
+Pause Kubernetes without impacting deployed applications.
+
+~~~
+minikube pause
+~~~
+
+Unpause a paused instance
+
+~~~
+minikube unpause
+~~~
+
+Halt the cluster.
+
+~~~
+minikube stop
+~~~
+
+Change the default memory limit(this needs a restart).
+
+~~~
+minikube config set memory 9001
+~~~
+
+Browse the catalog of easily installed kubernetes services:
+
+~~~
+minikube addons list
+~~~
+
+Create a second cluster running an older Kubernetes release:
+
+~~~
+minikube start -p aged --kubernetes-version=v1.16.1
+~~~
+
+Deletes all minikube clusters.
+
+~~~
+minikube delete --all
+~~~
