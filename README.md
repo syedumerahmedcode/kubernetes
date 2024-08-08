@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 39:47
+Timestamp: 42:39
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -186,6 +186,8 @@ minikube start
 
 Further notes in minikube.md.
 
+- minikube has docker runtime pre-installed so even if docker is not installed on one's local machine, it is still going to work.
+
 
 #### kubectl
 
@@ -198,3 +200,8 @@ Further notes in minikube.md.
 - How to install Kubectl on linux?
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+**Minikube CLI** for startup and dleeting the cluster
+whereas
+**Kubectl CLI** for configuring the minikube cluster.
+
