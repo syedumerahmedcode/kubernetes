@@ -23,9 +23,16 @@ kubectl get services
 ~~~
 
 
+The following command is used for creating various components using kubectl
+~~~
+kubectl create -h
+~~~
 
+Get the current status of deployment.
 
-
+~~~
+kubectl get deployment
+~~~
 
 
 
