@@ -31,6 +31,7 @@ kubectl create -h
 For example;
 
 kubectl create deployment nginx-depl --image=nginx
+kubectl create deployment mongo-depl --image=mongo
 
 
 Get the current status of deployment.
@@ -63,7 +64,11 @@ kubectl logs [pod name]
 ~~~
 
 
+This command is used to describe the pod using kubectl.
 
+~~~
+kubectl describe pod [pod name]
+~~~
 
 
 
