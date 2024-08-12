@@ -95,8 +95,8 @@ kubectl apply -f [file name]
 
 For example, kubectl apply -f config-file.yaml
 
-
-
+touch nginx-deployment.yaml
+vim nginx-deployment.yaml
 
 
 
