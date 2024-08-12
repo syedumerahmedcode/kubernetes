@@ -47,6 +47,9 @@ kubectl get replicaset
 ~~~
 
 ![layersofabsraction](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/layersofabsraction.png)
+NOTE: All the CRUD operations (Create, Update, Delete and Read) happens at the deploament level and everything underneath is taken care of automatically.
+
+
 
 How to edit an existing deployment(in order to: chnage pod name etc.)
 
@@ -71,12 +74,18 @@ kubectl describe pod [pod name]
 ~~~
 
 
-This command strats an interactive terminal for a pod using kubectl. Using this command, one goes to the terminal of the application(running inside the pod).
+This command starts an interactive terminal for a pod using kubectl. Using this command, one goes to the terminal of the application(running inside the pod).
 
 ~~~
 kubectl exec -it [pod name] -- bin/bash
 ~~~
 
+
+The following command is used to delete a deployment using kubectl.
+
+~~~
+kubectl delete deployment [name]
+~~~
 
 
 
