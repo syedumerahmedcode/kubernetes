@@ -71,6 +71,13 @@ kubectl describe pod [pod name]
 ~~~
 
 
+This command strats an interactive terminal for a pod using kubectl. Using this command, one goes to the terminal of the application(running inside the pod).
+
+~~~
+kubectl exec -it [pod name] -- bin/bash
+~~~
+
+
 
 
 
