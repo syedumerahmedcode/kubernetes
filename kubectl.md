@@ -87,13 +87,13 @@ The following command is used to delete a deployment using kubectl.
 kubectl delete deployment [name]
 ~~~
 
-The following command takes the configuration file as input parameter and does watever is written there.
+The following command takes the configuration file as input parameter and does watever is written there. This command is used in both when a deployment is created or updated as kubectl detects it itself.
 
 ~~~
 kubectl apply -f [file name]
 ~~~
 
-For example, kubectl apply -f config-file.yaml
+For example, kubectl apply -f nginx-deployment.yaml
 
 touch nginx-deployment.yaml
 vim nginx-deployment.yaml
