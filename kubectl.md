@@ -45,6 +45,30 @@ Get the replica set present in the cluster
 kubectl get replicaset
 ~~~
 
+![layersofabstraction](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/LayersOfAbstraction.png)
+
+How to edit an existing deployment(in order to: chnage pod name etc.)
+
+~~~
+kubectl edit deployment [name]
+~~~
+ For example: kubectl edit deployment nginx-depl
+--> Upon executing the above command, one gets an auto-generated configuration file with default values.
+
+
+This command is used to check logs in kuberenetes using kubectl.
+
+~~~
+kubectl logs [pod name]
+~~~
+
+
+
+
+
+
+
+
 
 
 
