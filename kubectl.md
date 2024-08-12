@@ -28,6 +28,11 @@ The following command is used for creating various components using kubectl
 kubectl create -h
 ~~~
 
+For example;
+
+kubectl create deployment nginx-depl --image=nginx
+
+
 Get the current status of deployment.
 
 ~~~
