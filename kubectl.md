@@ -39,6 +39,11 @@ Get the current status of deployment.
 kubectl get deployment
 ~~~
 
+Get the replica set present in the cluster
+
+~~~
+kubectl get replicaset
+~~~
 
 
 
