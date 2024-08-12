@@ -45,7 +45,7 @@ Get the replica set present in the cluster
 kubectl get replicaset
 ~~~
 
-![layersofabstraction](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/layersofabstraction.png)
+![layersofabsraction](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/layersofabsraction.png)
 
 How to edit an existing deployment(in order to: chnage pod name etc.)
 
