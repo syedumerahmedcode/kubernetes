@@ -205,3 +205,6 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 whereas
 **Kubectl CLI** for configuring the minikube cluster.
 
+## K8s Configuration YAML file
+- The 3 parts of a configuration file
+- Connecting _deployment_ to _services_ to _pods_.
