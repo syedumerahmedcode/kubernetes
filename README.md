@@ -208,3 +208,10 @@ whereas
 ## K8s Configuration YAML file
 - The 3 parts of a configuration file
 - Connecting _deployment_ to _services_ to _pods_.
+
+### 3 parts of a configuration file
+
+- metadata
+- specification: Attributes are specific to the 'kind' of the component.
+- status: Desired vs Actual--> This is slef-checking/self-healing feaure that Kubernetes provides. K8s updates status continuously! Etcd holds the current status of any K8s component.
+
