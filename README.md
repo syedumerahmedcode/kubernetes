@@ -215,3 +215,17 @@ whereas
 - specification: Attributes are specific to the 'kind' of the component.
 - status: Desired vs Actual--> This is slef-checking/self-healing feaure that Kubernetes provides. K8s updates status continuously! Etcd holds the current status of any K8s component.
 
+### Connecting deployment to pod
+
+- metadata part contains the labels. 
+- - any key-value pair for component.
+- - pods gets the label through the template blueprint.
+- specification part contains selectors.
+- -  The label (of pods) is matched to the selctor.
+- - The _app_ under _selector_ of _service_ searches for _app_ under _label_ in _deployment_. This way, service knows which pods are registered with it and this connection is amde via the selctor of the label.
+![connectingservicestodeployment](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/connectingservicestodeployment.png)
+
+
+
+
+
