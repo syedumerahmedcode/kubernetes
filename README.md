@@ -226,6 +226,9 @@ whereas
 ![connectingservicestodeployment](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/connectingservicestodeployment.png)
 
 
+### Ports in services and pod
 
+![portsinservicesandpodone](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/portsinservicesandpodone.png)
+![portsinservicesandpodtwo](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/portsinservicesandpodtwo.png)
 
 
