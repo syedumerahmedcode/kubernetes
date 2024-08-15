@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:16:19
+Timestamp: 1:18:29
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -236,3 +236,7 @@ whereas
 
 The following diagram gives an overview of kubernetes components in the sample application.
 ![overviewofk8scomponentsindemoapplication](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/overviewofk8scomponentsindemoapplication.png)
+
+Keeping the above diagram in mind, the browser requestg flow through various kubernetes componenets will look like the following:
+![browserrequestflowthroughthekubernetescomponents](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/browserrequestflowthroughthekubernetescomponents.png)
+
