@@ -89,9 +89,6 @@ kubectl delete deployment [name]
 
 The following command takes the configuration file as input parameter and does watever is written there. This command is used in both when a deployment is created or updated as kubectl detects it itself.
 
-~~~
-kubectl apply -f [file name]
-~~~
 
 For example, kubectl apply -f nginx-deployment.yaml
 
@@ -100,8 +97,22 @@ vim nginx-deployment.yaml
 
 
 
+The following command outputs the status in a temporary yaml file.
+
+~~~
+kubectl get deployment nginx-deployment-o yaml > nginx-deployment-result.yaml
+~~~
+
+The above command will output the status in nginx-deployment(the temporary yaml file).
 
 
+The fllowing command deletes the K8s component using the configuration file.
+~~~
+kubectl delete -f [file name]
+~~~
+For example;
+kubectl delete -f nginx-deployment.yaml
+kubectl delete -f nginx-service.yaml
 
 
 Template:
