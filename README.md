@@ -232,3 +232,7 @@ whereas
 ![portsinservicesandpodtwo](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/portsinservicesandpodtwo.png)
 
 
+## Demo Project: MongoDB and MongoExpress
+
+The following diagram gives an overview of kubernetes components in the sample application.
+![overviewofk8scomponentsindemoapplication](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/overviewofk8scomponentsindemoapplication.png)
