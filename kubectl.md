@@ -115,6 +115,15 @@ kubectl delete -f nginx-deployment.yaml
 kubectl delete -f nginx-service.yaml
 
 
+This command gets all coponents inside the cluster.
+
+~~~
+kubectl get all
+~~~
+
+
+
+
 Template:
 
 command description goes here
