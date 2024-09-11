@@ -264,3 +264,10 @@ K8s will replace the __key__ with the corresponding base64 decoded value once th
 The following snapshot describes how a secret is linked to deployment in yaml configurations within kubernetes:
 ![howsecretislinkedtodeploymentinyamlconfiguration](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/howsecretislinkedtodeploymentinyamlconfiguration.png)
 
+### Service
+Here the _kind_ is **service**, _metadata_ is a random name and _selector_is used to **connect to the pod using label (defined in the deployment part of the yaml file).**
+In the **ports** parts, we define the _port_ which is the **service port** whereas the _targetPort_ is the **containerport of deplyoment**.
+Please note that _taregtPort(of the service.yaml)_ MUST MATCH the _containerPort(of the deployment.yaml)_.
+
+A summary of above is as follows:
+![serviceconfigurationfile](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/serviceconfigurationfile.png)
