@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:29:00
+Timestamp: 1:31:00
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -271,3 +271,19 @@ Please note that _taregtPort(of the service.yaml)_ MUST MATCH the _containerPort
 
 A summary of the bove information is as follows:
 ![serviceconfigurationfile](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/serviceconfigurationfile.png)
+
+#### How to check if the service is listening to the correct pod?
+- First run: __kubectl get service__: This will list all services which are running in k8s cluster.
+
+- Then run __kubectl describe service mongodb-service__: This lists all charateristics of the mongodb-service(the one shihc we created for the demo project). Here, we get **Endpoints:         10.244.0.19:27017** which is _the IP address on which the pod_ and the port is _27017_ on which the application inside the pod is listening.
+
+- now run __kubectl get pod -o wide__: This list all pods running in the k8s cluster and currently, we see the following output: 
+__mongodb-deployment-585bb4fddc-hpgsf   1/1     Running   0             45h   **10.244.0.19**   minikube__
+
+Here, one can see that not only the IP address matches with ethe service but also the deployment name is the one which we used in the demo project.
+
+![ipaddressofservicematchesipaddressofthepod](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/ipaddressofservicematchesipaddressofthepod.png)
+
+
+
+
