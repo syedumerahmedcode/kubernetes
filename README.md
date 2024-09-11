@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:24:55
+Timestamp: 1:29:00
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -240,4 +240,23 @@ The following diagram gives an overview of kubernetes components in the sample a
 Keeping the above diagram in mind, the browser requestg flow through various kubernetes componenets will look like the following:
 ![browserrequestflowthroughthekubernetescomponents](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/browserrequestflowthroughthek8scomponents.png)
 
+### How are deployment and secret connected
+
+Genrally speaking, the passwords are not written directly on the configuration file **configmap** as 
+- 1) It is part of the repository, and
+- 2) The password will be stored in plain text
+
+A better way is to stored the passwords in a separate file called **secrets**. The secrets file contains a set of key value pairs in which the passwords are stored.
+
+#### On secret file
+Here we define the __name: mongodb-secret__, we use the default type i.e. __type: Opaque__ and here, under the data section we define key-value pairs. For example: _mongo-root-username: dXNlcm5hbWU=(where dXNlcm5hbWU= is the base64 encoded version of 'username')_.
+
+Note:
+- The encoding is not enabled by default and one has to stored the encoded value in the key -value pair.
+
+
+
+
+The following snapshot describes how a secret is linked to deployment in yaml configurations within kubernetes:
+![howsecretislinkedtodeploymentinyamlconfiguration](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/howsecretislinkedtodeploymentinyamlconfiguration.png)
 
