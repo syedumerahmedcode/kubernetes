@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:40:20
+Timestamp: 1:44:52
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -313,7 +313,14 @@ Please note that configmap **must already** be in the K8s cluster when we refere
 ### How to make it an External service(for mongo-express)
 The service part of mongo-express is similar to service yaml fo mongodb. However, in order to make the service externally visible, one needs to do the following two things:
 
-- **type: LoadBalancer**--> By usig this selector attribute, the service assigns an **external IP address** and hence, it accepts external requests.
+- **type: LoadBalancer**--> By usig this selector attribute, the service assigns an **external IP address** and hence, it accepts external requests. please note that __internal Service or ClusterIP__ is DEAFAULT. LoadBalncer assigns in addition to the cluser-IP an **External-IP**.
 - **nodePort: a port number within a special range**--> This is the port for external IP address.That is, this is the port one needs to enter in the browser. Please note that nodeport has a range between __30000 - 32767__ only.
 
 ![howtomakeanexternalservice](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/howtomakeanexternalservice.png)
+
+In order to start mongo-express from a browser _when running on minikube_, one can use the following command:
+
+~~~
+minikube service mongo-express-service
+~~~
+
