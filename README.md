@@ -248,12 +248,16 @@ Genrally speaking, the passwords are not written directly on the configuration f
 
 A better way is to stored the passwords in a separate file called **secrets**. The secrets file contains a set of key value pairs in which the passwords are stored.
 
-#### On secret file
+#### On the secret file side
 Here we define the __name: mongodb-secret__, we use the default type i.e. __type: Opaque__ and here, under the data section we define key-value pairs. For example: _mongo-root-username: dXNlcm5hbWU=(where dXNlcm5hbWU= is the base64 encoded version of 'username')_.
 
 Note:
 - The encoding is not enabled by default and one has to stored the encoded value in the key -value pair.
 
+#### On the configmap file side
+Here, under the __spec__ section after we define __image__ and __port__ details, we have __env__ variables section. Here, we use **valueFrom** with **secretKeyRef** underneath it and we define the __name: mongodb-secret(whihc is the secret filename)__ and __key: mongo-root-username(meaning which key of the specified secret file is referenced here)__.
+
+K8s will replace the __key__ with the corresponding base64 decoded value once the configmap is applied via kubectl.
 
 
 
