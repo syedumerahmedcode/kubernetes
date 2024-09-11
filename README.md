@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:37:10
+Timestamp: 1:38:14
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -308,4 +308,4 @@ The configmap file is very similar to secret in terms of content. Here, we have:
 
 ![configmapconfigurationfile](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/configmapconfigurationfile.png)
 
-
+Please note that configmap **must already** be in the K8s cluster when we reference it. 
