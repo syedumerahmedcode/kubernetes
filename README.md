@@ -269,5 +269,5 @@ Here the _kind_ is **service**, _metadata_ is a random name and _selector_is use
 In the **ports** parts, we define the _port_ which is the **service port** whereas the _targetPort_ is the **containerport of deplyoment**.
 Please note that _taregtPort(of the service.yaml)_ MUST MATCH the _containerPort(of the deployment.yaml)_.
 
-A summary of above is as follows:
+A summary of the bove information is as follows:
 ![serviceconfigurationfile](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/serviceconfigurationfile.png)
