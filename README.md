@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:34:59
+Timestamp: 1:37:10
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
