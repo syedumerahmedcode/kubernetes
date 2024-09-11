@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:32:34
+Timestamp: 1:34:59
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -283,6 +283,22 @@ __mongodb-deployment-585bb4fddc-hpgsf   1/1     Running   0             45h   **
 Here, one can see that not only the IP address matches with ethe service but also the deployment name is the one which we used in the demo project.
 
 ![ipaddressofservicematchesipaddressofthepod](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/ipaddressofservicematchesipaddressofthepod.png)
+
+
+
+### Deployment(for mongo-express)
+In this file, everything under __template__ is basically __pod definition__. For example; __image: mongo-express__, here image name is mongo-express. Please note that mongo-express listen on port 8081. 
+
+In order to connect it to mongodb, we need to tell it 3 things:
+- Which database to connect to? 
+- - MongoDB address/internal address-->ME_CONFIG_MONGODB_SERVER
+
+- which credentails to authenticate?
+- --> Username: ME_CONFIG_MONGODB_ADMINUSERNAME
+- --> Password: ME_CONFIG_MONGODB_ADMINPASSWORD
+
+This is how they are connected:
+![mongoexpressenvironmentvariables](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/mongoexpressenvironmentvariables.png)
 
 
 
