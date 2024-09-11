@@ -300,6 +300,12 @@ In order to connect it to mongodb, we need to tell it 3 things:
 This is how they are connected:
 ![mongoexpressenvironmentvariables](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/mongoexpressenvironmentvariables.png)
 
+### ConfigMap(for mongo-express)
+The configmap file is very similar to secret in terms of content. Here, we have:
+- **kind**: configmap
+- **metadata**: a random name
+- **data**: the actual contents- in key-value pair form.
 
+![configmapconfigurationfile](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/configmapconfigurationfile.png)
 
 
