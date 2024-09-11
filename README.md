@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:38:14
+Timestamp: 1:40:20
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -309,3 +309,11 @@ The configmap file is very similar to secret in terms of content. Here, we have:
 ![configmapconfigurationfile](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/configmapconfigurationfile.png)
 
 Please note that configmap **must already** be in the K8s cluster when we reference it. 
+
+### How to make it an External service(for mongo-express)
+The service part of mongo-express is similar to service yaml fo mongodb. However, in order to make the service externally visible, one needs to do the following two things:
+
+- **type: LoadBalancer**--> By usig this selector attribute, the service assigns an **external IP address** and hence, it accepts external requests.
+- **nodePort: a port number within a special range**--> This is the port for external IP address.That is, this is the port one needs to enter in the browser. Please note that nodeport has a range between __30000 - 32767__ only.
+
+![howtomakeanexternalservice](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/howtomakeanexternalservice.png)
