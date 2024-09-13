@@ -347,7 +347,9 @@ Additionally, we have:
 **kubernetes-dashboard**: This is only specific with minikube. One would not see this in a standard cluster.
 
 - What are the use cases?
-
+- Resources are grouped and provided a better overview when using namespaces. For example 'database' anemspace or 'monitoring' namespace.
+- Another use case is when the same application is accessed via multiple teams. Here, alos, having team based namespace is a good way forward. This way, teams can avoid the scenario where the components of first team are (unintentionally) overwritten by other teams.
+- One more use case is when Staging and Deployment are done on the same resource. Now, the namespaces can be according to the stage of the rollout of the product. Also, the different stages can still refer the same utility services (present under nginx or elastic search namespaces). this also applies for Blue/green deployment.
 
 - How namespace work and how to use it?
 
