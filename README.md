@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:46:16
+Timestamp: 1:48:40
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -334,4 +334,21 @@ A graphical representation of this process is shown below:
 
 
 ### K8s namespace explained
+
+- What is a namespace?
+--> one can organise resources in a namespace. Think of it like a virtual cluster inside a cluster. By default, k8s provides 4 namespaces.
+
+**kube-system**: This is meant for the k8s system and it holds system processes such as master and kubectl processes. NOTE: Do not create or modify in kube-system.
+**kube-public**: This namesapce is meant for publicly accessible data. It contains a configmap, whihc contains cluster-information. This information can be accessed via the following command: __kubectl clsuetr-info__
+**kube-node-lease**: It holds the information about the hearbeats of nodes and it determines the availability of a node.
+**default**: The resources we create are located here(provided no custom namesapce is defined in k8s).
+
+Additionally, we have:
+**kubernetes-dashboard**: This is only specific with minikube. One would not see this in a standard cluster.
+
+- What are the use cases?
+
+
+- How namespace work and how to use it?
+
 
