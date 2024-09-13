@@ -3,7 +3,7 @@
 ## Video source:
 https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana
 
-Timestamp: 1:48:40
+Timestamp: 1:57:42
 
 ## Kuberenetes
 - K8s is a open source container orchestration tool.
@@ -335,7 +335,7 @@ A graphical representation of this process is shown below:
 
 ### K8s namespace explained
 
-- What is a namespace?
+- **What is a namespace?**
 --> one can organise resources in a namespace. Think of it like a virtual cluster inside a cluster. By default, k8s provides 4 namespaces.
 
 **kube-system**: This is meant for the k8s system and it holds system processes such as master and kubectl processes. NOTE: Do not create or modify in kube-system.
@@ -346,11 +346,26 @@ A graphical representation of this process is shown below:
 Additionally, we have:
 **kubernetes-dashboard**: This is only specific with minikube. One would not see this in a standard cluster.
 
-- What are the use cases?
+- **What are the use cases?**
 - Resources are grouped and provided a better overview when using namespaces. For example 'database' anemspace or 'monitoring' namespace.
 - Another use case is when the same application is accessed via multiple teams. Here, alos, having team based namespace is a good way forward. This way, teams can avoid the scenario where the components of first team are (unintentionally) overwritten by other teams.
 - One more use case is when Staging and Deployment are done on the same resource. Now, the namespaces can be according to the stage of the rollout of the product. Also, the different stages can still refer the same utility services (present under nginx or elastic search namespaces). this also applies for Blue/green deployment.
 
-- How namespace work and how to use it?
+- **How namespace work and how to use it?**
+- Each namespace __MUST__ define its own configmap. Same guideline applied on secret.
+- However, __service__ is accessible in another namespace. One needs to refernce the namespace before the parameter value as shown below:
+
+![accessserviceinanothernamespace](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/accessserviceinanothernamespace.png)
+
+**NOTE**:
+- There are cerain components whichlive globally within in a cluster and hence, these components __cannot__ be created within a namespace. They are: __volume__ and __node__.
+
+The following command lists components that are not bound by a namespace.
+
+~~~
+kubectl api-resources --namespaced=false
+~~~
+
+
 
 
