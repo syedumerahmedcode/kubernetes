@@ -324,3 +324,10 @@ In order to start mongo-express from a browser _when running on minikube_, one c
 minikube service mongo-express-service
 ~~~
 
+once we have signed in to the mongodb express externally, if we __create a new database__, the following steps happen:
+
+Mongo Express external service ---> mongo express pod ---> Mongo DB Internal Service ---> Mongo DB Pod
+
+A graphical representation of this process is shown below:
+
+![stepsfrommongoexpressexternalservicetillmongodbpod](https://github.com/syedumerahmedcode/kubernetes/blob/master/images/stepsfrommongoexpressexternalservicetillmongodbpod.png)
